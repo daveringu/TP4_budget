@@ -29,7 +29,7 @@ class Project(models.Model):
         for expense in expense_list:
             total_expense_amount += expense.amount
 
-        # temporary solution, because the form currently only allows integer amounts
+        # temporary solution, because the form currently only allows integer amountss
         total_expense_amount = int(total_expense_amount)
         return self.budget - total_expense_amount
 
