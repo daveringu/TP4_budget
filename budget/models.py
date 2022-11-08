@@ -24,7 +24,6 @@ class Project(models.Model):
             total_temp += expenses
         expense_amount = total_temp
         new_budget_temp = budget_temp - expense_amount
-
  
         for expense in expense_list:
             total_expense_amount += expense.amount
